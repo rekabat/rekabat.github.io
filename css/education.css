@@ -1,0 +1,46 @@
+#mainbody {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    text-align: left;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.section-title {
+    margin-bottom: 20px;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: #00b359;
+}
+
+#mainbody > #education {
+    margin-bottom: 40px
+}
+
+#mainbody > #education > .degree {
+    margin-bottom: 25px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+#mainbody > #education > .degree > .degree-title {
+    font-size: 20px;
+    color: #00b359;
+}
+
+#mainbody > #education > .degree > .degree-date {
+    margin-bottom:10px;
+
+    font-size: 13px;
+    color: #666;
+}
+
+#mainbody > #education > .classwork {
+    margin-bottom: 20px
+}
