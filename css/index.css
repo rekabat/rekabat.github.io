@@ -1,0 +1,66 @@
+div#mainbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+div#mainbody > aside {
+    width: 300px;
+
+    text-align: center;
+}
+
+div#mainbody > aside > img {
+    height: 300px;
+    width: 300px;
+
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+div#mainbody > aside > #social {
+    font-size: 14px;
+}
+
+div#mainbody > aside > #social img {
+    height: 25px;
+    width: 25px;
+
+    margin: 0px 3px;
+    padding: 0;
+}
+
+div#mainbody > aside > #social {
+    margin: 10px 0 0 0;
+}
+
+div#mainbody > main > p > em {
+    color:#00b359;
+    font-style: normal;
+}
+
+div#mainbody > main > #resume-link {
+    margin: 0 0 10px 0;
+
+    font-size: 30px;
+    color:#00b359;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div#mainbody > main {
+    width: 450px;
+
+    text-align: left;
+}
+
+div#mainbody > main > h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+
+    color: #00b359;
+    font-weight:normal;
+}
