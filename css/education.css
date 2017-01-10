@@ -7,10 +7,6 @@
     text-align: left;
 }
 
-.no-margin {
-    margin: 0;
-}
-
 .section-title {
     margin-bottom: 20px;
 
@@ -19,7 +15,16 @@
     color: #00b359;
 }
 
+.no-margin {
+    margin: 0;
+}
+
+
 #mainbody > #education {
+    margin-bottom: 40px
+}
+
+#mainbody > #coursework-graduate {
     margin-bottom: 40px
 }
 
@@ -27,6 +32,10 @@
     margin-bottom: 25px;
     padding-left: 10px;
     border-left: 1px solid black;
+}
+
+#mainbody > #education > .no-margin {
+    margin-bottom: 0;
 }
 
 #mainbody > #education > .degree > .degree-title {
@@ -38,7 +47,7 @@
     margin-bottom:10px;
 
     font-size: 13px;
-    color: #666;
+    // color: #666;
 }
 
 #mainbody > #education > .classwork {
