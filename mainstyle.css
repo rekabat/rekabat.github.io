@@ -1,0 +1,93 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Raleway', sans-serif;
+}
+
+#content {
+    margin: 3% auto;
+    width: 800px;
+    text-align: center;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    // align-items: baseline;
+    align-items: flex-end;
+
+    width: 100%;
+}
+
+
+header > #nameplate {
+    text-align: left;
+}
+
+header > #nameplate > #nameplate-name {
+    font-size: 30px;
+}
+
+header > #nameplate > #nameplate-title {
+    font-size: 17px;
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: flex-end;
+
+    height:100%;
+    font-size: 20px;
+}
+
+header > nav > #nav-link {
+    padding: 0px 10px;
+}
+
+#header-seperator {
+    width: 200%;
+    margin: 10px 0 30px 0;
+    margin-left: -50%;
+}
+
+div#mainbody {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+div#mainbody > aside > img {
+    height: 300px;
+    width: 300px;
+
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+div#mainbody > aside > #social {
+    margin: 10px 0 0 0;
+}
+
+div#mainbody > main {
+    width: 400px;
+
+    text-align: left;
+}
+
+div#mainbody > main > h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
