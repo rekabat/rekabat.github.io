@@ -5,7 +5,7 @@ div#mainbody {
     justify-content: space-between;
 }
 
-div#mainbody > #project {
+div#mainbody > .project {
     width: 100%;
     margin: 0 0 20px 0;
 
@@ -16,11 +16,11 @@ div#mainbody > #project {
     align-items: center;
 }
 
-div#mainbody > #project > #project-screenshot {
+div#mainbody > .project > .project-screenshot {
     width: 300px;
 }
 
-div#mainbody > #project > #project-screenshot > img {
+div#mainbody > .project > .project-screenshot > img {
     width: 100%;
 
     border: 3px;
@@ -28,28 +28,28 @@ div#mainbody > #project > #project-screenshot > img {
     border-color: black;
 }
 
-div#mainbody > #project > #project-description {
+div#mainbody > .project > .project-description {
     width: 450px;
 
     text-align: left;
 }
 
-div#mainbody > #project > #project-description > #project-nameplate {
+div#mainbody > .project > .project-description > .project-nameplate {
     margin: 0 0 10px 0;
 
     color: #00b359;
 }
 
-div#mainbody > #project > #project-description > #project-nameplate > #project-title {
+div#mainbody > .project > .project-description > .project-nameplate > .project-title {
     font-size: 25px;
     font-weight: bold;
 }
 
-div#mainbody > #project > #project-description > #project-nameplate > #project-purpose {
+div#mainbody > .project > .project-description > .project-nameplate > .project-purpose {
     font-size: 15px;
 }
 
-div#mainbody > #project > #project-description a {
+div#mainbody > .project > .project-description a {
     color: #00b359;
     text-decoration: none;
 }
