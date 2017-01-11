@@ -1,55 +1,59 @@
-div#mainbody {
+#mainbody {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-div#mainbody > .project {
+#mainbody > .project {
     width: 100%;
-    margin: 0 0 20px 0;
+    height: 100%;
+    margin-bottom: 50px;
 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    // align-items: flex-top;
 }
 
-div#mainbody > .project > .project-screenshot {
+#mainbody > .no-margin {
+    margin: 0;
+}
+
+#mainbody > .project > .project-screenshot > img {
     width: 300px;
-}
-
-div#mainbody > .project > .project-screenshot > img {
-    width: 100%;
-
     border: 3px;
+
+    display: block;
+
     border-style: solid;
     border-color: black;
 }
 
-div#mainbody > .project > .project-description {
+#mainbody > .project > .project-description {
     width: 450px;
 
     text-align: left;
 }
 
-div#mainbody > .project > .project-description > .project-nameplate {
+#mainbody > .project > .project-description > .project-nameplate {
     margin: 0 0 10px 0;
 
     color: #00b359;
 }
 
-div#mainbody > .project > .project-description > .project-nameplate > .project-title {
+#mainbody > .project > .project-description > .project-nameplate > .project-title {
     font-size: 25px;
     font-weight: bold;
 }
 
-div#mainbody > .project > .project-description > .project-nameplate > .project-purpose {
+#mainbody > .project > .project-description > .project-nameplate > .project-purpose {
     font-size: 15px;
 }
 
-div#mainbody > .project > .project-description a {
+#mainbody > .project > .project-description a {
     color: #00b359;
     text-decoration: none;
 }

@@ -20,12 +20,12 @@
 }
 
 
-#mainbody > #education {
+#mainbody > * {
     margin-bottom: 40px
 }
 
-#mainbody > #coursework-graduate {
-    margin-bottom: 40px
+#mainbody > .no-margin {
+    margin: 0;
 }
 
 #mainbody > #education > .degree {
