@@ -1,0 +1,145 @@
+% LaTeX resume using res.cls
+\documentclass[10pt]{article}
+\usepackage[top=.75in, bottom=.75in, left=.75in, right=.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{pbox}
+\parskip 8pt
+
+
+\def\mytilde{{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}}
+\def\cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+\newcommand{\titlecell}[1]{%
+    \begin{minipage}[t]{\linewidth}
+        \raggedleft \bf
+        #1
+    \end{minipage}}
+\newcommand{\contentcell}[1]{%
+    \begin{minipage}[t]{\linewidth}
+        #1
+    \end{minipage}}
+\newcommand{\tablerowskip}{\smallskip\smallskip}
+
+\begin{document}
+\thispagestyle{empty}
+
+% Center the name over the entire width of resume:
+\centerline{\Large \bf Troy A. Baker}
+\smallskip
+\hrule
+\smallskip
+\centerline{troy.allen.baker@gmail.com \textbf{\ |\ } tabaker.com \textbf{\ |\ } (352) 246-9078}
+\smallskip
+\hrule
+\smallskip\smallskip
+
+
+\noindent
+\begin{tabular}{@{} p{.21\textwidth} p{.765\textwidth}}
+    % \pbox{\linewidth}{\raggedleft \bf \large \textsc{Summary of Qualifications} test} &
+    \titlecell{\textsc{Summary of Qualifications}} &
+    \contentcell{
+        \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            \item Strong teaching skills and a passion for learning. Developed by studying a diverse set of topics in a top-tier university.
+            \item Exposure to large code-bases in which I shaped architecture and wrote algorithms.
+            \item Independent, creative, and critical thinking developed while working towards a PhD.
+            % in C.S. (a long-term goal which has shifted to industry.)
+        \end{itemize}
+    }
+    \tablerowskip
+    \\
+
+    \titlecell{\textsc{Education}} &
+    \contentcell{
+        {\sl M.S. in Computer Science}, \hfill Aug. 2013 - Apr. 2017 \\
+        University of Florida
+
+        \smallskip\smallskip
+
+        {\sl B.S. in Nuclear Engineering}, \hfill Aug. 2009 - Apr. 2013 \\
+        University of Florida \\
+        Minors: Computer Science, Astronomy, Pre-med track
+    }
+    \tablerowskip
+    \\
+
+    \titlecell{\textsc{Work Experience}} &
+    \contentcell{
+        {\sl Intern for CSX}, \hfill Jan. 2013 - May 2013 \\
+        Designed SQL queries to collect GPS train data from CSX servers for use in self-implemented clustering algorithms to estimate customer service times on a rail network.
+    }
+    \tablerowskip
+    \\
+
+    \titlecell{\textsc{Projects} \\ (see tabaker.com)} &
+    \contentcell{
+        {\sl DR-Planner} \\
+        A large, academic, \cpp\ code-base, independently coded and architected by myself for my doctoral research. Used to quickly find realizations of rigid, 2D bar-joint graphs.
+        \begin{itemize}[itemsep=0pt,topsep=0pt] \itemsep -2pt
+            \item Implemented self-created algorithms, suitable for industry CAD software.
+            \item Lead author on scientific paper, published in CAGD.
+        \end{itemize}
+
+        \smallskip\smallskip
+
+        {\sl EASAL} \\
+        A large, academic, \cpp\ code-base for exploring the assembly landscape of molecules (and other physical structures.)
+        \begin{itemize}[itemsep=0pt,topsep=0pt] \itemsep -2pt
+            \item Led the restructuring and refactorization of this project; this allowed for accelerated development with undergraduate students.
+            \item Contributed to the user guide and feature summary, to be published in TOMS.
+        \end{itemize}
+
+        \smallskip\smallskip
+
+        {\sl Game Engine} \\
+        An independent project, in \cpp. Implemented from the ground up (using only minimal windowing and asset loading libraries.) Features: sophisticated software architecture patterns, multi-threading, and a deep understanding of the modern OpenGL
+        % programmable
+        pipeline.
+
+        \smallskip\smallskip
+
+        {\sl LolCupid} \\
+        An online app developed with one partner. Features: dynamic website powered by Ruby on Rails, attractive UI, large PostgreSQL database (\mytilde 90k users), daily tasks for updating database via calls to Riot Games API, and more.
+    }
+    \tablerowskip
+    \\
+
+    \titlecell{\textsc{Academic Achievements}} &
+    \contentcell{
+        \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            \item Author on numerous papers in the field of combinatorial geometry (see tabaker.com.)
+            \item Delivered presentations relating to these publications at several prestigious conferences.
+            \item Awarded the Graduate School Fellowship, the Tuckett Fellowship, and the Harris Fellowship.
+        \end{itemize}
+    }
+    \tablerowskip
+    \\
+
+    \titlecell{\textsc{Skills}} &
+    \contentcell{
+        Machine learning, computer graphics, theory of computing. \\
+        {\sl Languages:} C/\cpp, Python, SQL, Javascript, Ruby, PHP, Java, MATLAB, Haskell, Fortran, R, Emacs Lisp
+    }
+    \tablerowskip
+    \\
+
+    \titlecell{\textsc{Graduate} \\ \textsc{Coursework}} &
+    \contentcell{
+        Machine Learning (1 \& 2), Computer Graphics, Programming Language Design, Data Structures, Analysis of Algorithms, Computational Geometry, Theory of Computation, Towards Solving P vs.\ NP, Computer Architecture, Embedded Systems
+    }
+    \tablerowskip
+    \\
+
+    \titlecell{\textsc{Teaching} \\ (as teaching \\ assistant)}&
+    \contentcell{
+        Software Engineering, Web App Development, Operating Systems, Discrete Mathematics, Theory of Computation, Computer Programming Using C, Programming for Engineers
+    }
+    \tablerowskip
+    \\
+\end{tabular}
+
+% \section{\textsc{Interests}}
+% Software architecture, program management, teaching, management.
+
+\end{document}
