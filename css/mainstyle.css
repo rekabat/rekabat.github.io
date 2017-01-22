@@ -40,6 +40,8 @@ header {
 
 header > #nameplate {
     text-align: left;
+    text-decoration: none;
+    color: inherit;
 }
 
 header > #nameplate > #nameplate-name {

@@ -38,16 +38,33 @@
     margin-bottom: 0;
 }
 
+#mainbody > #education > .degree > .degree-date {
+    font-size: 10px;
+    color: #666;
+    // color: #666;
+}
+
 #mainbody > #education > .degree > .degree-title {
     font-size: 20px;
     color: #00b359;
 }
 
-#mainbody > #education > .degree > .degree-date {
-    margin-bottom:10px;
+#mainbody > #education > .degree > .degree-institution {
+    margin: 0;
 
     font-size: 13px;
-    // color: #666;
+}
+
+#mainbody > #education > .degree > .degree-gpa {
+    margin: 0;
+
+    font-size: 13px;
+}
+
+#mainbody > #education > .degree > .degree-minors {
+    margin-top: 10px;
+
+    font-size: 13px;
 }
 
 #mainbody > #education > .classwork {
