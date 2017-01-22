@@ -1,6 +1,6 @@
 % LaTeX resume using res.cls
-\documentclass[10pt]{article}
-\usepackage[top=.75in, bottom=.75in, left=.75in, right=.75in]{geometry}
+\documentclass[11pt]{article}
+\usepackage[top=.5in, bottom=.5in, left=1in, right=1in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
 \usepackage{pbox}
@@ -18,10 +18,10 @@
     \begin{minipage}[t]{\linewidth}
         #1
     \end{minipage}}
-\newcommand{\tablerowskip}{\vspace{4.1mm} \\}
+\newcommand{\tablerowskip}{\vspace{4.9mm} \\}
 
 \newcommand{\degreeskip}{\vspace{2.3mm}}
-\newcommand{\projectskip}{\vspace{3.3mm}}
+\newcommand{\projectskip}{\vspace{4.4mm}}
 
 \newcommand{\contentcellheader}[1]{\textbf{\textsl{#1}}}
 
@@ -77,7 +77,7 @@
     \contentcell{
         \contentcellheader{DR-Planner} \hfill Doctoral research, Independent (\cpp)
         \\ Used to quickly find realizations of rigid, 2D bar-joint graphs. Independently coded and architected.
-        \begin{itemize}[itemsep=0pt,topsep=0pt] \itemsep -2pt
+        \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
             % \item A large, academic code-base (\cpp), for my doctoral research. Used to quickly find realizations of rigid, 2D bar-joint graphs.
             % \item Independently coded and architected.
             \item Implemented self-created algorithms, suitable for industry CAD software.
@@ -87,7 +87,7 @@
 
         \contentcellheader{EASAL} \hfill Doctoral research, \mytilde 10 contributors (\cpp)
         \\ Used to explore the assembly landscape of molecules (and other physical structures.)
-        \begin{itemize}[itemsep=0pt,topsep=0pt] \itemsep -2pt
+        \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
             % \item A large, academic, code-base (\cpp). Used to explore the assembly landscape of molecules (and other physical structures.)
             \item Led the restructuring and refactorization of this project; this allowed for accelerated development with undergraduate students.
             \item Contributed to the user guide and feature summary, to be published in TOMS.
@@ -95,30 +95,20 @@
         \projectskip
 
         \contentcellheader{Game Engine} \hfill Independent (\cpp, Lua)
-        \\ Implemented from the ground up (using only minimal windowing and asset loading libraries.) Features: sophisticated software architecture patterns, multi-threading, and a deep understanding of the modern OpenGL
+        \\ Features: sophisticated software architecture patterns, multi-threading, and a deep understanding of the modern OpenGL
         % programmable
         pipeline.
-        % \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
-        %     \item An independent project (\cpp). Implemented from the ground up (using only minimal windowing and asset loading libraries.)
-        %     \item Features: sophisticated software architecture patterns, multi-threading, and a deep understanding of the modern OpenGL
-        %     % programmable
-        %     pipeline.
-        % \end{itemize}
         \projectskip
 
         \contentcellheader{LolCupid} \hfill 2 contributors (Ruby, SQL, Javascript, HTML/CSS)
         \\ Features: dynamic website powered by Ruby on Rails, attractive UI, large PostgreSQL database (\mytilde 90k records), daily tasks for updating database via calls to Riot Games API, and more.
-        % \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
-        %     \item An online app developed with one partner.
-        %     \item Features: dynamic website powered by Ruby on Rails, attractive UI, large PostgreSQL database (\mytilde 90k records), daily tasks for updating database via calls to Riot Games API, and more.
-        % \end{itemize}
     }
     \tablerowskip
 
     \titlecell{\textsc{Academic Achievements}} &
     \contentcell{
         \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
-            \item Author on numerous papers in the field of combinatorial geometry (see tabaker.com.)
+            \item Author on numerous papers in the field of combinatorial geometry.
             \item Presented my publications at several prestigious conferences.
             \item Awarded the Graduate School, Tuckett, and Harris Fellowships.
         \end{itemize}
@@ -131,18 +121,6 @@
         {\sl Languages (Strong, 10k+ LOC):} C/\cpp, Python. \\
         {\sl Languages (Moderate, 1k+ LOC):} SQL, Javascript, Ruby, PHP, Java, MATLAB, Haskell, Fortran, R, Emacs Lisp
         % {\sl Languages:} C/\cpp, Python, SQL, Javascript, Ruby, PHP, Java, MATLAB, Haskell, Fortran, R, Emacs Lisp
-    }
-    \tablerowskip
-
-    \titlecell{\textsc{Graduate} \\ \textsc{Coursework}} &
-    \contentcell{
-        Machine Learning (1 \& 2), Computer Graphics, Programming Language Design, Data Structures, Analysis of Algorithms, Computational Geometry, Theory of Computation, Towards Solving P vs.\ NP, Computer Architecture, Embedded Systems
-    }
-    \tablerowskip
-
-    \titlecell{\textsc{Teaching} \\ (as assistant)}&
-    \contentcell{
-        Software Engineering, Web App Development, Operating Systems, Discrete Mathematics, Theory of Computation, Computer Programming Using C, Programming for Engineers
     }
 \end{tabular}
 
