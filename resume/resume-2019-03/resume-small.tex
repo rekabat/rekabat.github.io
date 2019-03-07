@@ -1,0 +1,135 @@
+% LaTeX resume using res.cls
+\documentclass[10pt]{article}
+\usepackage[top=.5in, bottom=.5in, left=1in, right=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{pbox}
+\parskip 8pt
+
+
+\def\mytilde{{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}}
+\def\cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+\newcommand{\titlecell}[1]{%
+  \begin{minipage}[t]{\linewidth}
+    \raggedleft \textbf{#1}
+\end{minipage}}
+\newcommand{\contentcell}[1]{%
+  \begin{minipage}[t]{\linewidth}
+    #1
+\end{minipage}}
+\newcommand{\tablerowskip}{\vspace{4.83mm} \\}
+
+\newcommand\titleline[4][t]{%
+  \par\smallskip\noindent%
+  \parbox[#1]{.333\textwidth}{\raggedright#2}%
+  \parbox[#1]{.333\textwidth}{\centering#3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft#4}\par\smallskip%
+}
+
+\newcommand{\degreeskip}{\vspace{2mm}}
+\newcommand{\projectskip}{\vspace{3mm}}
+
+\newcommand{\contentcellheader}[1]{\textbf{\textsl{#1}}}
+
+\begin{document}
+\thispagestyle{empty}
+
+% Center the name over the entire width of resume:
+%% \centerline{\Large \bf Troy A. Baker}
+\titleline[t]{\ }{\Large \bf Troy A. Baker}{\textsl{March 2019}}
+\smallskip
+    {\hrule height 1pt}
+    \smallskip
+    \centerline{troy.allen.baker@gmail.com \textbf{\ |\ } tabaker.com \textbf{\ |\ } (352) 246-9078 \textbf{\ |\ } Albuquerque, NM}
+    \smallskip
+        {\hrule height 1pt}
+        \smallskip\smallskip
+
+
+        \noindent
+        \begin{tabular}{@{} p{.18\textwidth} p{.815\textwidth}}
+          \titlecell{\textsc{Summary}} &
+          \contentcell{
+            Computer science professional of 2 years. I have a passion for expanding my expertise in DevOps and software design and architecture. I strive to improve the products and the teams on which I work.
+            %% \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            %% \item Strong teaching skills and a passion for learning. Developed by studying a diverse set of topics in a top-tier university.
+            %% \item Exposure to large codebases in which I shaped architecture and wrote algorithms.
+            %% \item Independent, creative, critical thinking trained by working towards a PhD.
+            %%   % in C.S. (a long-term goal which has shifted to industry.)
+            %% \end{itemize}
+          }
+          \tablerowskip
+
+          \titlecell{\textsc{Education}} &
+          \contentcell{
+            \contentcellheader{M.S. in Computer Science} \hfill May 2017 \\
+            University of Florida, GPA: 3.96 \\
+            Presented at conferences and authored paper in the field of combinatorial geometry. Taught undergraduate classes.
+            \degreeskip
+
+            \contentcellheader{B.S. in Nuclear Engineering} \hfill May 2013 \\
+            University of Florida, GPA: 3.99 \\
+            Minors: Computer Science, Astronomy, Pre-med track
+          }
+          \tablerowskip
+
+          \titlecell{\textsc{Work Experience}} &
+          \contentcell{
+            \contentcellheader{Sandia National Labs: Computer Scientist R\&D} \hfill June 2017 - Present \\
+            Worked as a full stack developer on a redesign of an inventory tracking web application. Primary languages were Java, Typescript, and PL/SQL. Primary frameworks were Spring Boot and Angular.
+            \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            \item Redesigned the legacy Oracle database schema to support complete history of inventory. Led the migration effort.
+            \item Prototyped a new authentication scheme which branched into an independent project seeking adoption by the department.
+            \item Frequently interacted with customers to present new solutions and refine business practices.
+            \end{itemize}
+          }
+          \projectskip
+
+          \contentcell{
+            \contentcellheader{CSX: Intern} \hfill Jan.\ 2013 - May 2013 \\
+            Designed SQL queries to collect GPS train data from CSX servers for use in self-implemented clustering algorithms to estimate customer service times on a rail network.
+          }
+          \tablerowskip
+
+          \titlecell{\textsc{Academic Projects} \\ {\small (see tabaker.com)}} &
+          \contentcell{
+            \contentcellheader{DR-Planner} \hfill Doctoral research, Independent (\cpp)
+            \\ Used to quickly find realizations of rigid, 2D bar-joint graphs. Independently coded and architected.
+            \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            \item Implemented self-created algorithms, suitable for industry CAD software.
+            \item Lead author on scientific paper, published in CAGD.
+            \end{itemize}
+            \projectskip
+
+            \contentcellheader{EASAL} \hfill Doctoral research, \mytilde 10 contributors (\cpp)
+            \\ Used to explore the assembly landscape of molecules (and other physical structures.)
+            \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            \item Led the restructuring and refactorization of this project; this allowed for accelerated development with undergraduate students.
+            \item Contributed to the user guide and feature summary, to be published in TOMS.
+            \end{itemize}
+          }
+          \tablerowskip
+
+          \titlecell{\textsc{Personal Projects} \\ {\small (see tabaker.com)}} &
+          \contentcell{
+            \contentcellheader{Game Engine} \hfill Independent (\cpp, Lua)
+            \\ Features: sophisticated software architecture patterns, multi-threading, and a deep understanding of the OpenGL 4
+            % programmable
+            pipeline.
+            \projectskip
+
+            \contentcellheader{LolCupid} \hfill 2 contributors (Ruby, SQL, Javascript, HTML/CSS)
+            \\ Features: dynamic website powered by Ruby on Rails, attractive UI, large PostgreSQL database (\mytilde 90k records), daily tasks for updating database via calls to Riot Games API, and more.
+          }
+          \tablerowskip
+
+          \titlecell{\textsc{Skills}} &
+          \contentcell{
+            Web design, software architecture, authentication and authorization, machine learning, computer graphics, theory of computing. \\
+            {\sl Languages (Strong):} Java, Typescript, PL/SQL. \\
+            {\sl Languages (Moderate):} C/\cpp, Python. \\
+          }
+        \end{tabular}
+
+\end{document}
