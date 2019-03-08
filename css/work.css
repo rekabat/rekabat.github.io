@@ -1,0 +1,45 @@
+#mainbody {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#mainbody > .job {
+    width: 100%;
+    margin: 0 0 40px 0;
+    padding: 0 0 0 10px;
+    border-left: 1px solid black;
+    // border-bottom: 1px solid black;
+
+    text-align: left;
+}
+
+#mainbody > .job > .info {
+    margin: 0 0 20px 0;
+}
+
+#mainbody > .no-margin {
+    margin: 0;
+}
+
+#mainbody > .job > .info > .timeframe {
+    font-size: 13px;
+    color: #666;
+}
+
+#mainbody > .job > .info > .company {
+    padding: 5px 0;
+    font-size: 20px;
+    color: #00b359;
+    font-weight: bold;
+}
+
+#mainbody > .job > .info > .position {
+    font-size: 15px;
+    color: #00b359;
+}
+
+#mainbody > .job > .description {
+    font-size: 15px;
+}
