@@ -43,3 +43,8 @@
 #mainbody > .job > .description {
     font-size: 15px;
 }
+
+#mainbody > .job > .description > .timeframe {
+    font-size: 13px;
+    color: #666;
+}

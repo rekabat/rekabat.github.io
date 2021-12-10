@@ -1,0 +1,161 @@
+% LaTeX resume using res.cls
+\documentclass[10pt]{article}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[top=.75in, bottom=.75in, left=1in, right=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{pbox}
+\parskip 8pt
+
+
+\def\mytilde{{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}}
+\def\cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+\newcommand{\titlecell}[1]{%
+  \begin{minipage}[t]{\linewidth}
+    \raggedleft \textbf{#1}
+\end{minipage}}
+\newcommand{\contentcell}[1]{%
+  \begin{minipage}[t]{\linewidth}
+    #1
+\end{minipage}}
+\newcommand{\tablerowskip}{\vspace{1mm} \\}
+
+\newcommand\titleline[4][t]{%
+  \par\smallskip\noindent%
+  \parbox[#1]{.333\textwidth}{\raggedright#2}%
+  \parbox[#1]{.333\textwidth}{\centering#3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft#4}\par\smallskip%
+}
+
+\newcommand{\degreeskip}{\vspace{2mm}}
+\newcommand{\projectskip}{\vspace{3mm}}
+
+\newcommand{\contentcellheader}[1]{\textbf{\textsl{#1}}}
+
+% Turn on the style
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyhead{}
+\fancyfoot{}
+% clear header line
+\renewcommand{\headrulewidth}{0pt}
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage/\pageref{LastPage}}
+
+\begin{document}
+% \thispagestyle{empty}
+
+% Center the name over the entire width of resume:
+%% \centerline{\Large \bf Troy A. Baker}
+\titleline[t]{\ }{\Large \bf Troy A. Baker}{\textsl{December 2021}}
+\smallskip
+    {\hrule height 1pt width \textwidth}
+    \smallskip
+    \centerline{troy.allen.baker@gmail.com \textbf{\ |\ } resume.tabaker.com \textbf{\ |\ } (352) 246-9078 \textbf{\ |\ } Albuquerque, NM}
+    \smallskip
+        {\hrule height 1pt}
+        \smallskip\smallskip
+
+
+        \noindent
+        \begin{tabular}{@{} p{.178\textwidth} p{.8\textwidth}}
+          \titlecell{\textsc{Summary}} &
+          \contentcell{
+            Computer science professional of over 4 years. I have a passion for expanding my expertise in software design, architecture, security, and DevOps. I strive to improve the products and the teams on which I work.
+            %% \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            %% \item Strong teaching skills and a passion for learning. Developed by studying a diverse set of topics in a top-tier university.
+            %% \item Exposure to large codebases in which I shaped architecture and wrote algorithms.
+            %% \item Independent, creative, critical thinking trained by working towards a PhD.
+            %%   % in C.S. (a long-term goal which has shifted to industry.)
+            %% \end{itemize}
+          }
+        \end{tabular}
+        \tablerowskip
+
+        \noindent
+        \begin{tabular}{@{} p{.178\textwidth} p{.8\textwidth}}
+          \titlecell{\textsc{Work Experience}} &
+          \contentcell{
+            \contentcellheader{Sandia National Labs: Computer Scientist R\&D} \hfill June 2017 - Present \\
+            Full stack developer on a team providing solutions for authentication, authorization, messaging, caching, and more. Languages: Java and Typescript. Frameworks: Spring Boot and Angular.
+            \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            \item Lead designer and developer of a custom OIDC/OAuth2.0 service, that has been adopted by numerous applications for user authentication/authorization and inter-service authorization.
+            \item Lead designer and developer of a custom RBAC authorization service. Included a web-based UI for role/resource management and various libraries for integration into other applications.
+            \item Involved in deployment and maintenance of the COTS software Consul, Vault, Artemis, and Ignite. Involved in customer support for the numerous applications using these services.
+            \end{itemize}
+            \projectskip
+
+            Full stack developer on a team redesigning an inventory tracking web application. Languages: Java, Typescript, and PL/SQL. Frameworks: Spring Boot and Angular.
+            \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            \item Redesigned a legacy Oracle database schema to support complete history of inventory. Led the migration effort for existing data.
+            \item Prototyped a new authentication scheme which grew into the independent project mentioned above.
+            \item Developed significant portions of the user interface. Collaborated on a cross-project team, comprised of various applications in the shared suite, to design a common UI/UX.
+		 \item Frequently interacted with customers and management to present new solutions and refine business practices.
+            \end{itemize}
+          }
+          \projectskip
+
+          \contentcell{
+            \contentcellheader{CSX Corporation: Intern} \hfill Jan.\ 2013 - May 2013 \\
+            Analyzed GPS data of CSX train locations to estimate customer service times on a rail network, using a self-implemented clustering algorithms. Languages: Python and SQL.
+          }
+        \end{tabular}
+        \tablerowskip
+
+        \noindent
+        \begin{tabular}{@{} p{.178\textwidth} p{.8\textwidth}}
+          \titlecell{\textsc{Other Projects} \\ {\small (see resume. tabaker.com)}} &
+          \contentcell{
+            \contentcellheader{DR-Planner} \hfill Doctoral research, Independent (\cpp)
+            \\ Designed a GUI and the underlying algortihms to quickly find realizations of rigid, 2D bar-joint graphs. Independently coded and architected.
+            \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            \item Implemented self-created algorithms, suitable for industry CAD software.
+            \item Lead author on scientific paper, published in CAGD.
+            \end{itemize}
+            \projectskip
+
+            \contentcellheader{EASAL} \hfill Doctoral research, \mytilde 10 contributors (\cpp)
+            \\ Contributed to software that explores the assembly landscape of molecules (and other physical structures.)
+            \begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*] \itemsep -2pt
+            \item Led the restructuring and refactorization of this project; this allowed for accelerated development with undergraduate students.
+            \item Contributed to the user guide and feature summary, published in TOMS.
+            \end{itemize}
+            \projectskip
+
+            \contentcellheader{Game Engine} \hfill Hobby project, Independent (\cpp, Lua)
+            \\ Features: sophisticated software architecture patterns, multi-threading, and a deep understanding of the OpenGL 4
+            % programmable
+            pipeline.
+          }
+        \end{tabular}
+        \tablerowskip
+
+        \noindent
+        \begin{tabular}{@{} p{.178\textwidth} p{.8\textwidth}}
+          \titlecell{\textsc{Education}} &
+          \contentcell{
+            \contentcellheader{M.S. in Computer Science} \hfill May 2017 \\
+            University of Florida, GPA: 3.96 \\
+            Presented at conferences and authored a paper in the field of combinatorial geometry. Taught undergraduate classes.
+            \degreeskip
+
+            \contentcellheader{B.S. in Nuclear Engineering} \hfill May 2013 \\
+            University of Florida, GPA: 3.99 \\
+            Minors: Computer Science, Astronomy, Pre-med track
+          }
+        \end{tabular}
+        \tablerowskip
+
+        \noindent
+        \begin{tabular}{@{} p{.178\textwidth} p{.8\textwidth}}
+          \titlecell{\textsc{Skills}} &
+          \contentcell{
+            Web design, software architecture, authentication, authorization, containerized deployment. \\
+            {\sl Languages (Strong):} Java, Typescript, PL/SQL. \\
+            {\sl Languages (Moderate):} C/\cpp, Python. \\
+          }
+        \end{tabular}
+
+\end{document}
