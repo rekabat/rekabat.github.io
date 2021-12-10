@@ -1,0 +1,165 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+
+    
+    background-color: #eee;
+}
+
+#content {
+    // margin: 40px auto 0 auto;
+    margin: 0 auto;
+    // padding: 40px 40px 0 40px;
+    // padding: 0 40px;
+    width: 800px;
+    // height:100%;
+    padding: 3em 5em;
+    // min-height: 100%;
+
+    text-align: center;
+    background-color: white;
+
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, .2);
+
+    // box-sizing: border-box;
+
+    
+    height:auto !important; /* real browsers */
+    height:100%; /* IE6: treaded as min-height*/
+
+    min-height:100%; /* real browsers */
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 100%;
+
+    #nameplate {
+        text-align: left;
+        text-decoration: none;
+        color: inherit;
+
+        #nameplate-name {
+            font-size: 30px;
+            color: #00b359;
+        }
+
+        #nameplate-title {
+            font-size: 17px;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-flow: flex-end;
+    
+        height:100%;
+        font-size: 20px;
+        color: #00b359;
+
+        .nav-link {
+            margin-left: 20px;
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
+#header-seperator {
+    width: 120%;
+    margin: 10px 0 30px 0;
+    margin-left: -10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#mainbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    aside {
+        // width: 300px;
+        // margin: auto 0;
+    
+        text-align: center;
+
+        img {
+            // height: 300px;
+            width: 300px;
+        
+            border-radius: 50%;
+            border: 3px;
+            border-style: solid;
+            border-color: black;
+        }
+        
+        #social {
+            font-size: 14px;
+            margin: 10px 0 0 0;
+        }
+
+        #social img {
+            height: 25px;
+            width: 25px;
+        
+            margin: 0px 3px;
+            padding: 0;
+        }
+    }
+
+    main {
+        width: 450px;
+        text-align: left;
+
+        h1 {
+            margin: 0 0 10px 0;
+            padding: 0;
+        
+            color: #00b359;
+            font-weight:normal;
+        }
+
+        p > em {
+            color:#00b359;
+            font-style: normal;
+        }
+
+        #resume-link {
+            margin: 0 0 10px 0;
+        
+            font-size: 30px;
+            color:#00b359;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}

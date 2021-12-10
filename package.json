@@ -1,0 +1,26 @@
+{
+  "name": "rekabat.github.io",
+  "version": "1.0.0",
+  "description": "Personal homepage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rekabat/rekabat.github.io.git"
+  },
+  "author": "Troy Baker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rekabat/rekabat.github.io/issues"
+  },
+  "homepage": "https://github.com/rekabat/rekabat.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-mustache-plus": "^1.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
