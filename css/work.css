@@ -3,24 +3,15 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 40px;
 }
 
 #mainbody > .job {
     width: 100%;
-    margin: 0 0 40px 0;
     padding: 0 0 0 10px;
+    box-sizing: border-box;
     border-left: 1px solid black;
-    // border-bottom: 1px solid black;
-
     text-align: left;
-}
-
-#mainbody > .job > .info {
-    margin: 0 0 20px 0;
-}
-
-#mainbody > .no-margin {
-    margin: 0;
 }
 
 #mainbody > .job > .info > .timeframe {
@@ -40,11 +31,22 @@
     color: #00b359;
 }
 
-#mainbody > .job > .description {
+#mainbody > .job > .project {
+    margin-top: 20px;
     font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-#mainbody > .job > .description > .timeframe {
+#mainbody > .job > .project > ul {
+    margin: 0;
+}
+
+#mainbody > .job > .project > .meta {
     font-size: 13px;
     color: #666;
+}
+
+#mainbody > .job > .project > .meta > span {
+    font-style: italic;
 }

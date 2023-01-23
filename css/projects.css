@@ -21,16 +21,14 @@
     width: 100%;
     height: 100%;
     margin-bottom: 50px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    // align-items: flex-top;
 }
 
-#mainbody > .project-category > .project > .project-screenshot > img {
+#mainbody > .project-category > .project > .project-screenshot > a > img {
     width: 300px;
     border: 3px;
 
@@ -42,23 +40,15 @@
 
 #mainbody > .project-category > .project > .project-description {
     width: 450px;
-
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-#mainbody > .project-category > .project > .project-description > .project-nameplate {
+#mainbody > .project-category > .project > .project-description > .project-title {
     margin: 0 0 10px 0;
-
     color: #00b359;
-}
-
-#mainbody > .project-category > .project > .project-description > .project-nameplate > .project-title {
     font-size: 25px;
     font-weight: bold;
-}
-
-#mainbody > .project-category > .project > .project-description > .project-nameplate > .project-purpose {
-    font-size: 15px;
 }
 
 #mainbody > .project-category > .project > .project-description a {

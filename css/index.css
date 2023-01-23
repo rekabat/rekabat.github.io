@@ -6,16 +6,11 @@ div#mainbody {
 }
 
 div#mainbody > aside {
-    // width: 300px;
-    // margin: auto 0;
-
     text-align: center;
 }
 
 div#mainbody > aside > img {
-    // height: 300px;
     width: 300px;
-
     border-radius: 50%;
     border: 3px;
     border-style: solid;

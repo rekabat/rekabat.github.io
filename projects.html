@@ -8,7 +8,6 @@
   <link rel="stylesheet" type="text/css" href="css/mainstyle.css" />
   <link rel="stylesheet" type="text/css" href="css/projects.css" />
   <link rel="icon" href="images/index.ico" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
@@ -32,17 +31,18 @@
     <div id="mainbody">
       <section class="project-category">
         <div class="title">
-          Academic
+          Doctoral Research
         </div>
 
         <section class="project">
           <div class="project-screenshot">
-            <img src="images/drp.png" alt="DR-Planner" />
+            <a href="images/drp.png" target="_blank">
+              <img src="images/drp.png" alt="DR-Planner" />
+            </a>
           </div>
           <div class="project-description">
-            <div class="project-nameplate">
-              <div class="project-purpose">Doctoral Research</div>
-              <div class="project-title">DR-Planner &amp; OMD Solver</div>
+            <div class="project-title">
+              DR-Planner &amp; OMD Solver
             </div>
             Visit the project <a href="http://bitbucket.org/geoplexity/dr-planner/">on BitBucket</a> or watch <a
               href="https://youtu.be/bnqAYyQ97Zs">video 1</a> and <a href="https://youtu.be/dBg0nwtQff8">video 2</a>,
@@ -55,33 +55,19 @@
 
         <section class="project">
           <div class="project-screenshot">
-            <img src="images/easal.png" alt="EASAL" />
+            <a href="images/easal.png" target="_blank">
+              <img src="images/easal.png" alt="EASAL" />
+            </a>
           </div>
           <div class="project-description">
-            <div class="project-nameplate">
-              <div class="project-purpose">Doctoral Research</div>
-              <div class="project-title">EASAL</div>
+            <div class="project-title">
+              EASAL
             </div>
             Visit the project <a href="http://bitbucket.org/geoplexity/easal">on BitBucket</a>. Used to explore the
             assembly landscape of molecules (and other physical structures.) I led the redesign of the UI and the
             refactorization and restructuring of the codebase, which has been in development for ~10 years with ~5
             active contributors, allowing for accelerated development with undergraduate students. I also helped write
             the user guide and feature summary (see publications.)
-          </div>
-        </section>
-
-        <section class="project">
-          <div class="project-screenshot">
-            <img src="images/ml_project.png" alt="ML Project" />
-          </div>
-          <div class="project-description">
-            <div class="project-nameplate">
-              <div class="project-purpose">School Project</div>
-              <div class="project-title">Machine Learning Project</div>
-            </div>
-            Coded many ML algorithms throughout the semester in Python, outputting graphs via Matplotlib. This
-            culminated in a large project (with one partner) that compared and contrasted multiple forms of unsupervised
-            nonlinear dimensionality reduction and manifold learning algorithms on a variety of data sets.
           </div>
         </section>
       </section>
@@ -93,16 +79,17 @@
 
         <section class="project">
           <div class="project-screenshot">
-            <img src="images/starshot.png" alt="Starshot" />
+            <a href="images/starshot-2.png" target="_blank">
+              <img src="images/starshot-2.png" alt="Starshot" />
+            </a>
           </div>
           <div class="project-description">
-            <div class="project-nameplate">
-              <div class="project-purpose">Hobby Project</div>
-              <div class="project-title">Starshot</div>
+            <div class="project-title">
+              Starshot
             </div>
             An independent project. A web based deck-building card game. The game logic is mostly functional,
             implemented in Kotlin, allowing replay of the entire game state. The logic of individual game cards is
-            implemented in a custom language, parsed by ANTLR. Simultaneous, asynchronous play is enabled by
+            implemented in a custom language, parsed by ANTLR. Multiplayer asynchronous gameplay is enabled by
             WebSockets. The UI is an entirely custom design, implemented in Typescript with the Angular framework.
             Deployed to Google Cloud Kubernetes, but currently in development and not available for use.
           </div>
@@ -110,50 +97,19 @@
 
         <section class="project">
           <div class="project-screenshot">
-            <img src="images/game_engine.png" alt="Game Engine" />
+            <a href="images/game_engine.png" target="_blank">
+              <img src="images/game_engine.png" alt="Game Engine" />
+            </a>
           </div>
           <div class="project-description">
-            <div class="project-nameplate">
-              <div class="project-purpose">Hobby Project</div>
-              <div class="project-title">Game Engine</div>
+            <div class="project-title">
+              Game Engine
             </div>
             An independent project. Implemented in C++ from the ground up (using only minimal windowing and asset
             loading libraries.) Helped develop a deep understanding of the modern OpenGL programmable pipeline (i.e.
             using shaders). Features several sophisticated software architecture patterns, notably the entire system
             backbone is built on an event queue which allowed me to use multi-threading for individual systems. Also
             features Lua scripting integration.
-          </div>
-        </section>
-
-        <section class="project">
-          <div class="project-screenshot">
-            <img src="images/lolcupid.png" alt="LolCupid" />
-          </div>
-          <div class="project-description">
-            <div class="project-nameplate">
-              <div class="project-purpose">Hobby Project</div>
-              <div class="project-title">LolCupid</div>
-            </div>
-            Visit <a href="http://github.com/zachallaun/lolcupid">on GitHub</a>. An online app made as an entry for the
-            2016 Riot Games API Challenge, by myself and one partner. Features: dynamic website powered by Ruby on
-            Rails, attractive UI, large PostgreSQL database (~90k users), daily tasks for updating database via calls to
-            Riot Games API, and more.
-            <br />
-            Note: No longer being hosted.
-          </div>
-        </section>
-
-        <section class="project no-margin">
-          <div class="project-screenshot">
-            <img src="images/self.jpg" alt="Picture of Me" />
-          </div>
-          <div class="project-description">
-            <div class="project-nameplate">
-              <div class="project-purpose">Hobby Project</div>
-              <div class="project-title">Personal Homepage</div>
-            </div>
-            A slick and beautiful website, right? No doubt the envy of other professionals. Built from scratch. Deployed
-            through GitHub pages. See source <a href="http://github.com/rekabat/rekabat.github.io">here</a>.
           </div>
         </section>
       </section>
